@@ -15,6 +15,7 @@ class Widget : public QWidget
 {
     Q_OBJECT
     ncDocument *set;
+    ncDocISOGcode* ncDoc =nullptr;
 
 public:
     explicit Widget(QWidget *parent = 0);
