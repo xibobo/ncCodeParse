@@ -352,7 +352,7 @@ st_ncMillStatus ncRunFanucMill::getLineModel( int LineNo,st_ncMillStatus Current
               }
               tempModel.CG01 = k.value();
               Gbit=Gbit|(1<<1);
-              cgbit=0;
+              //cgbit=0;
           }
           if(k.value() == 4){
               if(Gbit>>0&1 == 1){
@@ -393,7 +393,7 @@ st_ncMillStatus ncRunFanucMill::getLineModel( int LineNo,st_ncMillStatus Current
               }
               tempModel.CG06 = k.value();
               Gbit=Gbit|(1<<6);
-              cgbit=cgbit|(1<<6);
+              //cgbit=cgbit|(1<<6);
           }
           if(k.value() == 22 || k.value() == 23){
               if(Gbit>>4&1 == 1){
